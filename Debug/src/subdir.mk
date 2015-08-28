@@ -6,13 +6,6 @@
 C_SRCS += \
 ../src/main.c 
 
-O_SRCS += \
-../src/alg_sequential.o \
-../src/functions.o \
-../src/main-menu.o \
-../src/main.o \
-../src/menu.o 
-
 OBJS += \
 ./src/main.o 
 

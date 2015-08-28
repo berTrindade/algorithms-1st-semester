@@ -33,7 +33,7 @@ void load_menu(void)
 		printf("\t\tEnter Choice: ");
 		scanf("%u", &choice);
 
-		system("clear || cls");
+		system("clear");
 
 		 switch(choice)
 		{
