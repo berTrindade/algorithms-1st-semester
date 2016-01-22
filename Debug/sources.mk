@@ -16,4 +16,5 @@ SUBDIRS := \
 .metadata/.plugins/org.eclipse.cdt.make.core \
 src \
 src/modules \
+src/modules/repetition-algorithms \
 

@@ -5,6 +5,8 @@
 /* Prototype functions */
 void load_menu(void);
 
+void load_alg_repetition(void);
+
 /* Global constant */
 extern const int FLAG;
 
