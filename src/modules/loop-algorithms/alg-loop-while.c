@@ -7,7 +7,7 @@
 
 /* Headers */
 #include "../../../headers/menu.h"
-#include "../../../headers/repetition-algorithms/alg-repetition-while.h"
+#include "../../../headers/loop-algorithms/alg-loop-while.h"
 
 static void first(void)
 {
@@ -331,11 +331,11 @@ static void seventh (void)
 }
 
 //Menu algoritmos de repetiçao
-void load_alg_repetition_while (void)
+void load_alg_loop_while (void)
 {
 	do
 	{
-		printf("\n\t../Repetition Algorithms - While \n");
+		printf("\n\t../Loop Algorithms - While \n");
 		printf("\nPlease choose one of the following options:\n");
 
 		printf("_____________________________________________________\n\n");
@@ -371,7 +371,7 @@ void load_alg_repetition_while (void)
 				break;
 			case 7: seventh();
 				break;
-			case 8:load_alg_repetition();
+			case 8:load_alg_loop();
 				break;
 			case 9: printf("\nQuitting program!\n");
 				exit(FLAG);

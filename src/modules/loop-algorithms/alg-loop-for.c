@@ -7,7 +7,7 @@
 
 /* Headers */
 #include "../../../headers/menu.h"
-#include "../../../headers/repetition-algorithms/alg-repetition-for.h"
+#include "../../../headers/loop-algorithms/alg-loop-for.h"
 
 static void first(void)
 {
@@ -384,11 +384,11 @@ static void eighteenth (void)
 }
 
 //Menu algoritmos de repetiçao
-void load_alg_repetition_for (void)
+void load_alg_loop_for (void)
 {
 	do
 	{
-		printf("\n\t../Repetition Algorithms - For \n");
+		printf("\n\t../Loop Algorithms - For \n");
 		printf("\nPlease choose one of the following options:\n");
 
 		printf("_____________________________________________________\n\n");
@@ -457,7 +457,7 @@ void load_alg_repetition_for (void)
 			break;
 		case 18: eighteenth();
 			break;
-		case 19:load_alg_repetition();
+		case 19:load_alg_loop();
 			break;
 		case 20: printf("\n Quitting program!\n");
 			exit(FLAG);

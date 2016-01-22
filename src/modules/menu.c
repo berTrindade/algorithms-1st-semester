@@ -8,11 +8,9 @@
 
 #include "../../headers/alg-conditional.h"
 #include "../../headers/alg-sequential.h"
-
-#include "../../headers/repetition-algorithms/alg-repetition-while.h"
-#include "../../headers/repetition-algorithms/alg-repetition-do-while.h"
-#include "../../headers/repetition-algorithms/alg-repetition-for.h"
-
+#include "../../headers/loop-algorithms/alg-loop-do-while.h"
+#include "../../headers/loop-algorithms/alg-loop-for.h"
+#include "../../headers/loop-algorithms/alg-loop-while.h"
 #include "../../headers/vectors.h"
 #include "../../headers/matrices.h"
 
@@ -22,17 +20,17 @@ const int FLAG = 0;
 /* Global variable */
 unsigned int choice;
 
- void load_alg_repetition (void)
+ void load_alg_loop (void)
 {
 	do
 	{
-		printf("\n\tRepetition algorithms \n");
+		printf("\n\tLoop algorithms \n");
 		printf("\nPlease choose one of the following options:\n");
 
 		printf("___________________________________________\n\n");
-		printf("1. Repetition algorithms - For\n");
-		printf("2. Repetition algorithms - While\n");
-		printf("3. Repetition algorithms - Do While\n");
+		printf("1. Loop algorithms - For\n");
+		printf("2. Loop algorithms - While\n");
+		printf("3. Loop algorithms - Do While\n");
 		printf("4. Return\n");
 		printf("5. Exit\n");
 
@@ -44,11 +42,11 @@ unsigned int choice;
 
 		switch (choice)
 		{
-			case 1: load_alg_repetition_for();
+			case 1: load_alg_loop_for();
 				break;
-			case 2: load_alg_repetition_while();
+			case 2: load_alg_loop_while();
 				break;
-			case 3: load_alg_repetition_do_while();
+			case 3: load_alg_loop_do_while();
 				break;
 			case 4: load_menu();
 				break;
@@ -72,7 +70,7 @@ void load_menu(void)
 		printf("___________________________________________\n\n");
 		printf("1. Sequential algorithms\n");
 		printf("2. Conditional algorithms\n");
-		printf("3. Repetition algorithms\n");
+		printf("3. Loop algorithms\n");
 		printf("4. Vectors\n");
 		printf("5. Matrices\n");
 		printf("6. Exit\n");
@@ -89,7 +87,7 @@ void load_menu(void)
 				break;
 			case 2: load_alg_conditional();
 				break;
-			case 3: load_alg_repetition();
+			case 3: load_alg_loop();
 				break;
 			case 4: load_vectors();
 				break;

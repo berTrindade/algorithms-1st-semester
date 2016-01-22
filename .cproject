@@ -50,7 +50,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="modules|alg-repetition|conditional-algorithms|repetition-algorithms|headers|test.c|sequential-algorithms" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="modules|alg-repetition|conditional-algorithms|headers|test.c|sequential-algorithms|loop-algorithms" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="headers"/>
 					</sourceEntries>
 				</configuration>
@@ -98,10 +98,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="alg-repetition|sequential-algorithms|conditional-algorithms|repetition-algorithms|src/modules|headers|modules|src/module|test.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="modules|alg-repetition|conditional-algorithms|headers|src/module|test.c|sequential-algorithms|loop-algorithms|src/modules" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="headers"/>
-						<entry excluding="sequential-algorithms|repetition-algorithms" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/modules"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/modules/repetition-algorithms"/>
+						<entry excluding="sequential-algorithms|loop-algorithms" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/modules"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/modules/loop-algorithms"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

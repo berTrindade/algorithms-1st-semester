@@ -9,8 +9,7 @@
 
 /* Headers */
 #include "../../../headers/menu.h"
-#include "../../../headers/repetition-algorithms/alg-repetition-do-while.h"
-
+#include "../../../headers/loop-algorithms/alg-loop-do-while.h"
 
 static void first(void)
 {
@@ -825,11 +824,11 @@ static void twenty_second(void)
 }
 
 //Menu algoritmos de repetiçao
-void load_alg_repetition_do_while (void)
+void load_alg_loop_do_while (void)
 {
 	do
 	{
-		printf("\n\t../Repetition Algorithms - Do While\n");
+		printf("\n\t../Loop Algorithms - Do While\n");
 		printf("\nPlease choose one of the following options:\n");
 
 		printf("_____________________________________________________\n\n");
@@ -910,7 +909,7 @@ void load_alg_repetition_do_while (void)
 				break;
 			case 22: twenty_second();
 				break;
-			case 23:load_alg_repetition();
+			case 23: load_alg_loop();
 				break;
 			case 24: printf("\n Quitting program!\n");
 				exit(FLAG);
