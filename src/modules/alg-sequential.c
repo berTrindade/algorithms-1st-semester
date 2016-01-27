@@ -1,13 +1,13 @@
 
-/* Libraries */
+//Libraries
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Headers */
+//Headers
 #include "../../headers/menu.h"
 #include "../../headers/alg-sequential.h"
 
-/* Mostrar na tela o produto entre 28 e 43 */
+//Show on screen the product between 28 and 23
 static void first (void)
 {
 	int result;
@@ -16,7 +16,7 @@ static void first (void)
 	printf("The product of 43 + 28 is: %d.\n", result);
 }
 
-/* Mostrar a média aritmética entre 3 números passados pelo usuário */
+//Show arithmetic mean between 3 numbers entered by user
 static void second (void)
 {
 	float first, second, third, mean;
@@ -34,7 +34,7 @@ static void second (void)
 	printf("\nArithmetic mean: %.2f.\n", mean);
 }
 
-/* Lê um número e mostra seu sucessor e seu antecessor na tela */
+//Read a number and show his successor and predecessor on screen
 static void third (void)
 {
 	int number, predecessor, successor;
@@ -48,7 +48,7 @@ static void third (void)
 	printf("The predecessor is: %d and the successor is: %d\n", predecessor, successor);
 }
 
-/* Lê dois números e mostra a soma */
+//Read two numbers and show the sum
 static void fourth(void)
 {
 	int first, second, sum;
@@ -60,7 +60,7 @@ static void fourth(void)
 	printf("The sum of %d and %d is: %d\n", first, second, sum);
 }
 
-/* Lê um número e mostra a terça parte deste número */
+//Read a number and show the third part of him
 static void fifth (void)
 {
 	float number, third_part;
@@ -72,7 +72,7 @@ static void fifth (void)
 	printf("Third part of %.1f is: %.1f\n", number, third_part);
 }
 
-/* Lê dois números e mostre os seguintes resultados: divisão do primeiro pelo segundo */
+//Read two numbers and show the following results: Division of the first by the second number
 static void sixth (void)
 {
 	float first, second, result;
@@ -84,7 +84,7 @@ static void sixth (void)
 	printf("The division product between %.2f and %.2f is: %.2f", first, second, result);
 }
 
-/* Leia 4 números e mostre a média ponderada, sabendo-se que os pesos são respectivamente: 1, 2, 3 e 4 */
+//Read four numbers and show the weighted mean, knowing that the weights are respectively: 1, 2, 3, 4
 static void seventh (void)
 {
 	float first, second, third, fourth, mean;
@@ -96,7 +96,7 @@ static void seventh (void)
 	printf("Weighted mean: %.2f\n", mean);
 }
 
-/* Lê o saldo de uma aplicação e imprima o novo saldo, considerado o reajuste de 1% */
+//Read balance of an application and print the new one, considering the readjustments of 1%
 static void eighth (void)
 {
 	/* How to calculate increase percentage:
@@ -106,19 +106,19 @@ static void eighth (void)
 	 * Another reasoning to be follow is, for example, being 30% of 200, the same as 0,30 * 200 = 60, the final result is the sum 200 + 60 = 260.
 	 */
 
-	const float READJUSTMENT = 1.01;
+	const float READJUSTMENTS = 1.01;
 	float balance, new_balance;
 
 	printf("Inform current balance: R$ ");
 	scanf("%f", &balance);
 
-	new_balance = balance * READJUSTMENT;
+	new_balance = balance * READJUSTMENTS;
 	printf("After readjustments your current balance is: R$ %.2f\n", new_balance);
 }
 
- /* Entre com a base e a altura de um retângulo e mostre os resultados:
-  * Perímetro (Perímetro é igual à soma dos 4 lados)
-  * Área (Área é igual à base vezes altura)
+ /* Enter the base and the height of a rectangle and show the results:
+  * Perimeter (Equals the sum of the four sides)
+  * Area (Equals base times height)
   */
 static void ninth (void)
 {
@@ -136,7 +136,7 @@ static void ninth (void)
 	printf("The perimeter is: %.2f and the area is %.2f\n", perimeter, area);
 }
 
-/* Lê o raio de um círculo e mostre como saída o perímetro (2*π*Raio) e a área (π*Raio2) */
+//Read the radius of a circle and show how output the perimeter (2*π*radius) and the area (π*Raio2)
 static void tenth (void)
 {
 	const float PI = 3.1415;
@@ -151,7 +151,7 @@ static void tenth (void)
 	printf("The circle's area is: %.2f and the perimeter is: %.2f\n", area, perimeter);
 }
 
-/* Calcule e mostre a área de um triângulo (área é igual a (base x altura) dividido por 2) */
+//Calculate and show the area of a triangle (area is equal to (base * height) divided by 2)
 static void eleventh (void)
 {
 	float area, base, height;
@@ -166,7 +166,7 @@ static void eleventh (void)
 	printf("The triangle's area is: %.2f", area);
 }
 
-/* Calcule o valor de uma prestação em atraso, utilizando a fórmula: PRESTAÇÃO = VALOR + (VALOR * (TAXA/100) * TEMPO) */
+//Calculate the installment's value in arrears, using the formula: INSTALLMENT = VALUE + (VALUE * (RATE/100) * TIME)
 static void twelfth (void)
 {
 	int time;
@@ -186,11 +186,11 @@ static void twelfth (void)
 }
 
 /*
- * Construa um algoritmo que :
- * Leia a cotação do dólar,
- * Leia um valor em dólares
- * Converta esse valor para Real,
- * Mostre o resultado
+ * Build an algorithm that:
+ * Read Dollar quotation,
+ * Read a value in dollars,
+ * Convert this value to Real - BR,
+ * Show the result.
  */
 static void thirteenth (void)
 {
@@ -205,11 +205,10 @@ static void thirteenth (void)
 }
 
 /*
- * Desenvolva algoritmo que:
-· Leia 4 (quatro) números
-· Calcule o quadrado para cada um
-· Somem todos e
-· Mostre o resultado
+ * Develop an algorithm that:
+ * Read four number,
+ * Calculate the square for each one of them,
+ * Add all and show the result.
  */
 static void fourtenth (void)
 {
@@ -232,26 +231,25 @@ static void fourtenth (void)
 }
 
 /*
- * Construa um algoritmo para pagamento de comissão de vendedores de peças, levando-se
-em consideração que sua comissão será de 5% do total da venda e que você tem os
-seguintes dados:
-· Identificação do vendedor
-· Código da peça
-· Preço unitário da peça
-· Quantidade vendida
+ * Build an algorithm to commission payment of pieces salesperson, taking note
+ * that his commission will be 5% of the total sale and that you have the following data:
+ * Salesperson's ID
+ * Piece's ID
+ * Piece's Unit Price
+ * Sold quantity
  */
 static void fifteenth (void)
 {
 	float piece_price, commission, tlt_sale;
-	int salesman_ID, piece_ID, sold_qty;
+	int salesperon_ID, piece_ID, sold_qty;
 
-	printf("Enter salesman's ID: ");
-	scanf("%d", &salesman_ID);
+	printf("Enter salesperson's ID: ");
+	scanf("%d", &salesperon_ID);
 
 	printf("Enter piece's ID: ");
 	scanf("%d", &piece_ID);
 
-	printf("Enter piece's price: R$ ");
+	printf("Enter piece's Unit Price: R$ ");
 	scanf("%f", &piece_price);
 
 	printf("Enter sold quantity: ");
@@ -260,17 +258,17 @@ static void fifteenth (void)
 	tlt_sale = sold_qty * piece_price;
 	commission =  tlt_sale * 0.05;
 
-	printf("The salesman ID %d due to his total sale equivalent to R$ %.2f will receive R$ %.2f of commission in his payment.\n", salesman_ID, tlt_sale, commission);
+	printf("The salesman ID %d due to his total sale equivalent to R$ %.2f will receive R$ %.2f of commission in his payment.\n", salesperon_ID, tlt_sale, commission);
 }
 
 /*
- * Desenvolva um algoritmo que lê o peso da carne que será vendida e
-   preço por quilo. O algoritmo deve calcular e imprimir na tela o total a pagar,
-   o valor pago ao ICMS (17%) e o lucro líquido do açougue.
+ * Develop an algorithm that reads the price of the meat that will be sold and
+   the price per kilo. The algorithm must calculate and print the total to be paid,
+   the value paid to ICMS (17%) and the net profit for the butcher.
  */
 static void sixteenth (void)
 {
-	float meat_kg, meat_weight, tlt_sale, icms, lqd_value;
+	float meat_kg, meat_weight, tlt_sale, icms, net_profit;
 
 	printf("Enter meat's weight: ");
 	scanf("%f", &meat_weight);
@@ -280,12 +278,12 @@ static void sixteenth (void)
 
 	tlt_sale = meat_weight * meat_kg;
 	icms = tlt_sale * 0.017;
-	lqd_value = tlt_sale - icms;
+	net_profit = tlt_sale - icms;
 
-	printf("Total: R$ %.2f, ICMS: R$ %.2f, liquid value: R$ %.2f.\n", tlt_sale, icms, lqd_value);
+	printf("Total: R$ %.2f, ICMS: R$ %.2f, net profit: R$ %.2f.\n", tlt_sale, icms, net_profit);
 }
 
-/* Escreva um algoritmo para trocar entre si os valores de duas variáveis A e B. */
+//Write an algorithm to exchange the values of two variables between themselves.
 static void seventeenth (void)
 {
 	int a, b, aux;
@@ -304,13 +302,13 @@ static void seventeenth (void)
 }
 
 /*
- * Escreva um algoritmo que leia os dados para o parafuso A e para o parafuso B, isto é, o código,
- * a quantidade de peças e o valor unitário de cada parafuso e a porcentagem de IPI (única) a ser acrescentada.
- * Calcule e escreva o valor total a ser pago para cada peça e o valor total geral.
+ * Write an algorithm that reads the data for the screw A and screw B, that's to say,
+ * the ID, the number of pieces and the unit value of each screw and the percentage of IPI to be added.
+ * Calculate and write the total value to be paid for each piece and the overall total.
  */
 static void eighteenth (void)
 {
-	int screwA_ID, screwB_ID, screwA_qtd, screwB_qtd;
+	int screwA_ID, screwB_ID, screwA_qty, screwB_qty;
 	float screwA_UValue, screwB_UValue, ipi, screwA_tlt, screwB_tlt, tlt_value;
 
 	printf("Screw A's ID: ");
@@ -320,10 +318,10 @@ static void eighteenth (void)
 	scanf("%d", &screwB_ID);
 
 	printf("Screw A's quantity: ");
-	scanf("%d", &screwA_qtd);
+	scanf("%d", &screwA_qty);
 
 	printf("Screw B's quantity: ");
-	scanf("%d", &screwB_qtd);
+	scanf("%d", &screwB_qty);
 
 	printf("Screw A's unit value: R$ ");
 	scanf("%f", &screwA_UValue);
@@ -334,17 +332,20 @@ static void eighteenth (void)
 	printf("IPI percentage: ");
 	scanf("%f", &ipi);
 
-	screwA_tlt = screwA_qtd * screwA_UValue;
-	screwA_tlt = screwA_tlt + (screwA_tlt * ipi)/100; //ou tlt_A = (qtd_A * valorU_A)*(IPI/100+1)
+	screwA_tlt = screwA_qty * screwA_UValue;
+	screwA_tlt = screwA_tlt + (screwA_tlt * ipi)/100;
 
-	screwB_tlt = screwB_qtd * screwB_UValue;
+	//Another way to write the equation above: screwA_tlt = (screwA_qty * screwA_UValue) * (ipi/100+1)
+
+	screwB_tlt = screwB_qty * screwB_UValue;
 	screwB_tlt = screwB_tlt + (screwB_tlt * ipi)/100;
 
 	tlt_value = screwA_tlt * screwB_tlt;
-	printf("Screw A's total value: R$ %.2f. Screw B's total value: R$ %.2f. Total value: R$ %.2f.\n", screwA_tlt, screwB_tlt, tlt_value);
+
+	printf("Screw A's total value: R$ %.2f. Screw B's total value: R$ %.2f. Overall total: R$ %.2f.\n", screwA_tlt, screwB_tlt, tlt_value);
 }
 
-/* Calcular e apresentar o volume de uma lata de óleo, considerando o Volume=3,14159*R^2*Altura */
+//Calculate and introduce the volume and an Oil can, considering the volume = (3.14159*R^2*Height)
 static void nineteenth (void)
 {
 	const float PI = 3.14159;
@@ -360,8 +361,8 @@ static void nineteenth (void)
 	printf("The volume of an Oil can is: %f", volume);
 }
 
-/* Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno.
- * Considerar que a média é ponderada e que o peso das notas é: 2,3 e 5, respectivamente.
+/* Make an algorithm that reads the three grades of a student and calculate the final mean of this student.
+ * Consider that the weighted mean and the grades' weight are: 2,3 e 5, respectively.
  */
 static void twentieth (void)
 {
@@ -381,8 +382,8 @@ static void twentieth (void)
 }
 
 /*
- * O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos (aplicados ao custo de fábrica).
- * Supondo que a percentagem do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao consumidor.
+ * The cost to the costumer of a new car is the sum of the factory cost with the percentage of the distributor and taxes (applied to the factory cost).
+ * Assuming that the percentage of the distributor is 28% and taxes are 45%, write an algorithm that reads the factory cost of a car and write the cost to the costumer.
  */
 static void twenty_first (void)
 {
@@ -398,24 +399,23 @@ static void twenty_first (void)
 	printf("The Customer's cost is: R$ %f", customerCost);
 }
 
-/* Faça um algoritmo que leia o tempo de duração de um evento em uma fábrica expressa em segundos e mostre-o expresso em horas, minutos. */
+//Make an algorithm that reads the duration of an event at a factory expressed in seconds and show it expressed in hours, minutes.
 static void twenty_second (void)
 {
 	int hours, minutes, seconds;
 
-	printf("Enter duration time (in seconds): ");
+	printf("Enter duration (in seconds): ");
 	scanf("%d", &seconds);
 
 	hours = (int)(seconds/3600);
 	minutes = (int)(seconds/60);
 
-	printf("Event duration time is (HH:SS): %d: %d", hours, minutes);
+	printf("Event duration is (HH:SS): %d: %d", hours, minutes);
 }
 
 /*
- * Escreva um algoritmo que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário.
- * A seguir, mostre o número e o salário do funcionário.
- */
+ * Write an algorithm that reads the number of an employee, your number of worked hours, the value received per hour
+ * and calculate the salary of this employee. Next, show the employee's number and salary. */
 static void twenty_third (void)
 {
 	int employee_ID, workedHours;
@@ -435,33 +435,33 @@ static void twenty_third (void)
 }
 
 /*
- * Escrever um algoritmo que leia o codigo de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro).
- * Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o seu salário no final do mês.
- * Desconte também 8% de INSS e 6% de auxílio transporte.
+ * Write an algorithm that reads the ID of a salesperson, his fixed salary and total of sales made in the month (in cash).
+ * Knowing that this salesperson gets 15% commission on his sales made, inform his salary at the end of the month.
+ * Discount also 8% of INSS and 6% of transit pass.
  */
 static void twenty_fourth (void)
 {
 	int salesman_ID;
-	float fix_salary, tlt_sale, inss, transit_pass, lqd_salary;
+	float fixed_salary, tlt_sale, inss, transit_pass, lqd_salary;
 
 	printf("Salesman's ID: ");
 	scanf("%d", &salesman_ID);
 
-	printf("Fix salary: R$ ");
-	scanf("%f", &fix_salary);
+	printf("Fixed salary: R$ ");
+	scanf("%f", &fixed_salary);
 
 	printf("Total of sales in this month: R$ ");
 	scanf("%f", &tlt_sale);
 
-	inss = fix_salary * 0.08;
-	transit_pass = fix_salary * 0.06;
+	inss = fixed_salary * 0.08;
+	transit_pass = fixed_salary * 0.06;
 
-	lqd_salary = (((tlt_sale * 1.15) + fix_salary) - inss) - transit_pass;
+	lqd_salary = (((tlt_sale * 1.15) + fixed_salary) - inss) - transit_pass;
 	printf("The employee ID %d will receive R$ %.2f as payment at the end of the month.\n", salesman_ID, lqd_salary);
 }
 
 
-//Menu algoritmos sequenciais
+//Sequential algorithms menu
 void load_alg_sequential (void)
 {
 	do

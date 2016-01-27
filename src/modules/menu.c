@@ -5,7 +5,6 @@
 
 /* Headers */
 #include "../../headers/menu.h"
-
 #include "../../headers/alg-conditional.h"
 #include "../../headers/alg-sequential.h"
 #include "../../headers/loop-algorithms/alg-loop-do-while.h"
