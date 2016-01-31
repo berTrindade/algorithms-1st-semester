@@ -1,9 +1,9 @@
 
-/* Libraries */
+// Libraries
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Headers */
+// Headers
 #include "../../headers/menu.h"
 #include "../../headers/alg-conditional.h"
 #include "../../headers/alg-sequential.h"
@@ -13,10 +13,10 @@
 #include "../../headers/vectors.h"
 #include "../../headers/matrices.h"
 
-/* Constant */
+// Constant
 const int FLAG = 0;
 
-/* Global variable */
+// Global variable
 unsigned int choice;
 
  void load_alg_loop (void)
@@ -58,7 +58,7 @@ unsigned int choice;
 	} while (choice != 5);
 }
 
-/* Menu function */
+// Menu function
 void load_menu(void)
 {
 	do
