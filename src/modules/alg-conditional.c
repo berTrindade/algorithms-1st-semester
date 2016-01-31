@@ -1,11 +1,11 @@
 
-/* Libraries */
+// Libraries
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 
-/* Headers */
+// Headers
 #include "../../headers/menu.h"
 #include "../../headers/alg-conditional.h"
 
@@ -102,7 +102,7 @@ static void fourth (void)
     printf("Quantidade: ");
     scanf("%d", &qtde);
 
-    /* Switch case conditions */
+    // Switch case conditions
     switch (pedido)
     {
 		case 100:
