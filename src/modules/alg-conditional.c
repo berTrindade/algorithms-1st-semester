@@ -25,7 +25,7 @@ static void first (void)
 
 	media = (nota[0] + nota[1] + nota[2])/3;
 
-	/* If-Else Condition */
+	// If-Else Condition
 	if (media >= 7.0)
 		printf("APROVADO");
 	else
