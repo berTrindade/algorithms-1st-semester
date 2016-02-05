@@ -42,7 +42,7 @@ static void second (void)
 	printf("Valor 2: ");
 	scanf("%d", &numero[1]);
 
-	/* Nested-If conditions */
+	// Nested-If conditions
 	if (numero[0] != numero[1])
 	{
 		if (numero[0] > numero[1])
