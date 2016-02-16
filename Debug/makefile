@@ -8,7 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/modules/repetition-algorithms/subdir.mk
+-include src/modules/loop-algorithms/subdir.mk
 -include src/modules/subdir.mk
 -include src/subdir.mk
 -include .metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
@@ -26,19 +26,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: algorithms-2nd-semester
+all: algorithms-1st-semester
 
 # Tool invocations
-algorithms-2nd-semester: $(OBJS) $(USER_OBJS)
+algorithms-1st-semester: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "algorithms-2nd-semester" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "algorithms-1st-semester" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) algorithms-2nd-semester
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) algorithms-1st-semester
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -10,7 +10,7 @@
 //Show on screen the product between 28 and 23
 static void first (void)
 {
-	int result;
+	int result = 0;
 
 	result = 43 + 28;
 	printf("The product of 43 + 28 is: %d.\n", result);
@@ -19,7 +19,7 @@ static void first (void)
 //Show arithmetic mean between 3 numbers entered by user
 static void second (void)
 {
-	float first, second, third, mean;
+	float first = 0.0f, second = 0.0f, third = 0.0f, mean = 0.0f;
 
 	printf("First grade: ");
 	scanf("%f", &first);
@@ -37,7 +37,7 @@ static void second (void)
 //Read a number and show his successor and predecessor on screen
 static void third (void)
 {
-	int number, predecessor, successor;
+	int number = 0, predecessor = 0, successor = 0;
 
 	printf("Inform a number: ");
 	scanf("%d", &number);
@@ -51,7 +51,7 @@ static void third (void)
 //Read two numbers and show the sum
 static void fourth(void)
 {
-	int first, second, sum;
+	int first = 0, second = 0, sum = 0;
 
 	printf("Enter two numbers to add: ");
 	scanf("%d %d", &first, &second);
@@ -63,7 +63,7 @@ static void fourth(void)
 //Read a number and show the third part of him
 static void fifth (void)
 {
-	float number, third_part;
+	float number = 0.0f, third_part = 0.0f;
 
 	printf("Inform a number: ");
 	scanf("%f", &number);
@@ -75,7 +75,7 @@ static void fifth (void)
 //Read two numbers and show the following results: Division of the first by the second number
 static void sixth (void)
 {
-	float first, second, result;
+	float first = 0.0f, second = 0.0f, result = 0.0f;
 
 	printf("Enter two numbers to divide: ");
 	scanf("%f %f", &first, &second);
@@ -87,7 +87,7 @@ static void sixth (void)
 //Read four numbers and show the weighted mean, knowing that the weights are respectively: 1, 2, 3, 4
 static void seventh (void)
 {
-	float first, second, third, fourth, mean;
+	float first = 0.0f, second = 0.0f, third = 0.0f, fourth = 0.0f, mean = 0.0f;
 
 	printf("Enter four numbers: ");
 	scanf("%f %f %f %f", &first, &second, &third, &fourth);
@@ -107,7 +107,7 @@ static void eighth (void)
 	 */
 
 	const float READJUSTMENTS = 1.01;
-	float balance, new_balance;
+	float balance = 0.0f, new_balance = 0.0f;
 
 	printf("Inform current balance: R$ ");
 	scanf("%f", &balance);
@@ -122,7 +122,7 @@ static void eighth (void)
   */
 static void ninth (void)
 {
-	float base, height, perimeter, area;
+	float base = 0.0f, height = 0.0f, perimeter = 0.0f, area = 0.0f;
 
 	printf("Base of the rectangle: ");
 	scanf("%f", &base);
@@ -140,7 +140,7 @@ static void ninth (void)
 static void tenth (void)
 {
 	const float PI = 3.1415;
-	float radius, perimeter, area;
+	float radius = 0.0f, perimeter = 0.0f, area = 0.0f;
 
 	printf("Enter the circle's radius: ");
 	scanf("%f", &radius);
@@ -154,7 +154,7 @@ static void tenth (void)
 //Calculate and show the area of a triangle (area is equal to (base * height) divided by 2)
 static void eleventh (void)
 {
-	float area, base, height;
+	float area = 0.0f, base = 0.0f, height = 0.0f;
 
 	printf("Enter triangle's base: ");
 	scanf("%f", &base);
@@ -169,8 +169,8 @@ static void eleventh (void)
 //Calculate the installment's value in arrears, using the formula: INSTALLMENT = VALUE + (VALUE * (RATE/100) * TIME)
 static void twelfth (void)
 {
-	int time;
-	float value, installment, rate;
+	int time = 0;
+	float value = 0.0f, installment = 0.0f, rate = 0.0f;
 
 	printf("Inform value: ");
 	scanf("%f", &value);
@@ -195,7 +195,7 @@ static void twelfth (void)
 static void thirteenth (void)
 {
 	const float DOLLAR_QUOTATION = 3.4991;
-	float vlr_dolar, vlr_real;
+	float vlr_dolar = 0.0f, vlr_real = 0.0f;
 
 	printf("Enter a value in dollars: $ ");
 	scanf("%f", &vlr_dolar);
@@ -212,7 +212,7 @@ static void thirteenth (void)
  */
 static void fourtenth (void)
 {
-	int first, second, third, fourth, sum;
+	int first = 0, second = 0, third = 0, fourth = 0, sum = 0;
 
 	printf("First number: ");
 	scanf("%d", &first);
@@ -240,8 +240,8 @@ static void fourtenth (void)
  */
 static void fifteenth (void)
 {
-	float piece_price, commission, tlt_sale;
-	int salesperon_ID, piece_ID, sold_qty;
+	float piece_price = 0.0f, commission = 0.0f, tlt_sale = 0.0f;
+	int salesperon_ID = 0, piece_ID = 0, sold_qty = 0;
 
 	printf("Enter salesperson's ID: ");
 	scanf("%d", &salesperon_ID);
@@ -268,7 +268,7 @@ static void fifteenth (void)
  */
 static void sixteenth (void)
 {
-	float meat_kg, meat_weight, tlt_sale, icms, net_profit;
+	float meat_kg = 0.0f, meat_weight = 0.0f, tlt_sale = 0.0f, icms = 0.0f, net_profit = 0.0f;
 
 	printf("Enter meat's weight: ");
 	scanf("%f", &meat_weight);
@@ -286,7 +286,7 @@ static void sixteenth (void)
 //Write an algorithm to exchange the values of two variables between themselves.
 static void seventeenth (void)
 {
-	int a, b, aux;
+	int a = 0, b = 0, aux = 0;
 
 	printf("Value of A: ");
 	scanf("%d", &a);
@@ -308,8 +308,8 @@ static void seventeenth (void)
  */
 static void eighteenth (void)
 {
-	int screwA_ID, screwB_ID, screwA_qty, screwB_qty;
-	float screwA_UValue, screwB_UValue, ipi, screwA_tlt, screwB_tlt, tlt_value;
+	int screwA_ID = 0, screwB_ID = 0, screwA_qty = 0, screwB_qty = 0;
+	float screwA_UValue = 0.0f, screwB_UValue = 0.0f, ipi = 0.0f, screwA_tlt = 0.0f, screwB_tlt = 0.0f, tlt_value = 0.0f;
 
 	printf("Screw A's ID: ");
 	scanf("%d", &screwA_ID);
@@ -349,7 +349,7 @@ static void eighteenth (void)
 static void nineteenth (void)
 {
 	const float PI = 3.14159;
-	float radius, height, volume;
+	float radius = 0.0f, height = 0.0f, volume = 0.0f;
 
 	printf("Enter radius: ");
 	scanf("%f", &radius);
@@ -366,7 +366,7 @@ static void nineteenth (void)
  */
 static void twentieth (void)
 {
-	float first, second, third, mean;
+	float first = 0.0f, second = 0.0f, third = 0.0f, mean = 0.0f;
 
 	printf("First grade: ");
 	scanf("%f", &first);
@@ -387,7 +387,7 @@ static void twentieth (void)
  */
 static void twenty_first (void)
 {
-	float factoryCost, customerCost, distroPercentage, tax;
+	float factoryCost = 0.0f, customerCost = 0.0f, distroPercentage = 0.0f, tax = 0.0f;
 
 	printf("Enter Car's factory cost: R$ ");
 	scanf("%f", &factoryCost);
@@ -395,14 +395,14 @@ static void twenty_first (void)
 	distroPercentage = factoryCost * 1.28;
 	tax = factoryCost * 1.45;
 
-	customerCost = customerCost + distroPercentage + tax;
+	customerCost = factoryCost + distroPercentage + tax;
 	printf("The Customer's cost is: R$ %f", customerCost);
 }
 
 //Make an algorithm that reads the duration of an event at a factory expressed in seconds and show it expressed in hours, minutes.
 static void twenty_second (void)
 {
-	int hours, minutes, seconds;
+	int hours = 0, minutes = 0, seconds = 0;
 
 	printf("Enter duration (in seconds): ");
 	scanf("%d", &seconds);
@@ -418,8 +418,8 @@ static void twenty_second (void)
  * and calculate the salary of this employee. Next, show the employee's number and salary. */
 static void twenty_third (void)
 {
-	int employee_ID, workedHours;
-	float hoursValue, salary;
+	int employee_ID = 0, workedHours = 0;
+	float hoursValue = 0.0f, salary = 0.0f;
 
 	printf("Employee's ID: ");
 	scanf("%d", &employee_ID);
@@ -441,8 +441,8 @@ static void twenty_third (void)
  */
 static void twenty_fourth (void)
 {
-	int salesman_ID;
-	float fixed_salary, tlt_sale, inss, transit_pass, lqd_salary;
+	int salesman_ID = 0;
+	float fixed_salary = 0.0f, tlt_sale = 0.0f, inss = 0.0f, transit_pass = 0.0f, lqd_salary = 0.0f;
 
 	printf("Salesman's ID: ");
 	scanf("%d", &salesman_ID);
